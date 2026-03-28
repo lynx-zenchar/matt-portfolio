@@ -4,7 +4,7 @@ import '../styles/Resume.css'
 const EDUCATION = [
   {
     school: 'University of Dallas',
-    logo: 'public/university_of_dallas.png',
+    logo: '/university_of_dallas.png',
     location: 'Irving, TX',
     degree: 'M.S. Candidate, Data Science and AI',
     date: 'Expected May 2027',
@@ -13,7 +13,7 @@ const EDUCATION = [
   },
   {
     school: 'University of Notre Dame',
-    logo: '/public/notredame.png',
+    logo: '/notredame.png',
     location: 'Notre Dame, IN',
     degree: 'B.S. Computer Science; Minor in Philosophy',
     date: 'May 2025',
@@ -26,7 +26,7 @@ const EXPERIENCE = [
   {
     title: 'Graduate Student Technical Analytics Assistant',
     org: 'University of Dallas, eLearning Dept.',
-    logo: 'public/university_of_dallas.png',
+    logo: '/university_of_dallas.png',
     location: 'Irving, TX',
     date: 'Sep 2025 – Present',
     bullets: [
@@ -38,7 +38,7 @@ const EXPERIENCE = [
   {
     title: 'Teaching Assistant — Design & Analysis of Algorithms',
     org: 'University of Notre Dame',
-    logo: '/public/notredame.png',
+    logo: '/notredame.png',
     location: 'Notre Dame, IN',
     date: 'Jan 2025 – May 2025',
     bullets: [
@@ -49,7 +49,7 @@ const EXPERIENCE = [
   {
     title: 'Research Assistant',
     org: 'Medical CV Lab (Prof. Danny Chen) & PPG Lab (Prof. Adam Czajka)',
-    logo: '/public/notredame.png',
+    logo: '/notredame.png',
     location: 'University of Notre Dame',
     date: 'Oct 2022 – May 2025',
     bullets: [
@@ -62,7 +62,7 @@ const EXPERIENCE = [
   {
     title: 'Technical Validation Analyst Intern',
     org: 'IDEA Center',
-    logo: '/public/ideacenter.jpeg',
+    logo: '/ideacenter.jpeg',
     location: 'South Bend, IN',
     date: 'Jun 2024 – Aug 2024',
     bullets: [
@@ -74,7 +74,7 @@ const EXPERIENCE = [
   {
     title: 'UI/UX Designer Intern',
     org: 'We2Link',
-    logo: '/public/we2link.png',
+    logo: '/we2link.png',
     location: 'Los Angeles, CA (Remote)',
     date: 'Jun 2022 – Sep 2022',
     bullets: [
@@ -85,7 +85,7 @@ const EXPERIENCE = [
   {
     title: 'Emergency Medical Technician Intern',
     org: 'MedStar911 Mobile Healthcare',
-    logo: '/public/medstar.png',
+    logo: '/medstar.png',
     location: 'Fort Worth, TX',
     date: 'July 2021',
     bullets: [
