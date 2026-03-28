@@ -1,16 +1,74 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Matthew Eleazar — Portfolio
+ 
+Personal portfolio site built with React + Vite. Features pages for Home, Resume, Projects, and Certifications.
+ 
+**Live:** [matteleazar.tech](https://matteleazar.tech)
+ 
+---
+ 
+## Tech Stack
+ 
+- **Framework:** React 18 + Vite
+- **Routing:** React Router DOM
+- **Styling:** Plain CSS with CSS variables
+- **Fonts:** Outfit, JetBrains Mono (Google Fonts)
+- **Deployment:** Vercel
+ 
+---
+ 
+## Getting Started
+ 
+```bash
+# Install dependencies
+npm install
+ 
+# Start dev server (http://localhost:5173)
+npm run dev
+ 
+# Production build
+npm run build
+ 
+# Preview production build locally
+npm run preview
+```
+ 
+---
+ 
+## Project Structure
+ 
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   └── Footer.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Resume.jsx
+│   ├── Projects.jsx
+│   └── Certifications.jsx
+├── styles/
+│   ├── global.css
+│   ├── Navbar.css
+│   ├── Footer.css
+│   ├── Home.css
+│   ├── Resume.css
+│   ├── Projects.css
+│   └── Certifications.css
+├── App.jsx
+└── main.jsx
+```
+ 
+---
+ 
+## Customization
+ 
+| What | Where |
+|---|---|
+| Personal info / bio | `src/pages/Home.jsx` |
+| Experience & education | `src/pages/Resume.jsx` |
+| Projects | `src/pages/Projects.jsx` |
+| Certifications | `src/pages/Certifications.jsx` |
+| Profile photo | `public/profile.jpg` |
+| Color theme | `--accent` in `src/styles/global.css` |
+ 
+---
