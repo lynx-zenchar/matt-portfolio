@@ -122,7 +122,20 @@ const PROJECTS = [
     github: 'https://github.com/your-username/thepensive-matthew',
     image: '/project-images/pensive.png',
     demo: 'https://thepensivematthew-django.vercel.app/'
-  }
+  },
+  {
+  title: 'Personal Portfolio Website',
+  category: 'Full Stack',
+  type: 'Personal Project',
+  date: 'Mar 2026',
+  description:
+    'Designed and built a multi-page personal portfolio from scratch using React and Vite. Features a responsive dark/light theme with a blue and white color palette, animated hero section with circular profile photo, timeline-based resume, categorized project gallery, and a certifications page. Deployed via Vercel with SPA routing.',
+  tags: ['React', 'Vite', 'React Router', 'CSS Variables', 'Vercel'],
+  highlights: ['4 pages with client-side routing', 'Animated hero & profile photo', 'Deployed on Vercel'],
+  image: '/project-images/portfolio.png',
+  github: 'https://github.com/lynx-zenchar/matt-portfolio',
+  demo: 'https://matteleazar.tech',
+},
 ]
 
 export default function Projects() {
@@ -134,11 +147,17 @@ export default function Projects() {
         <div className="projects-header">
           <span className="section-label">Portfolio</span>
           <h1>Projects</h1>
-          <p className="projects-sub">ML pipelines · data analysis · full-stack apps</p>
+          <p className="projects-sub">
+            <a href="#ai-ml">AI/ML</a>
+            <span> · </span>
+            <a href="#data-science">Data Science</a>
+            <span> · </span>
+            <a href="#full-stack">Full-Stack Web Apps</a>
+          </p>
         </div>
 
         {categories.map(cat => (
-          <section key={cat} className="projects-category">
+          <section key={cat} className="projects-category" id={cat.replace(/\//g, '-').replace(/\s+/g, '-').toLowerCase()}>
             <h2 className="category-title">{cat}</h2>
             <div className="projects-grid">
               {PROJECTS.filter(p => p.category === cat).map((p, i) => (
