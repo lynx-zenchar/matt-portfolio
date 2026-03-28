@@ -1,0 +1,186 @@
+.resume-page {
+  padding-top: 4.5rem;
+  min-height: 100vh;
+}
+
+.resume-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+.resume-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.resume-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+/* Section */
+.rs { margin-bottom: 4rem; }
+
+.rs__label {
+  font-family: var(--font-mono);
+  font-size: 1rem; /* Education, Experience, etc. */
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+
+.tl-item {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.tl-item__dot {
+  position: absolute;
+  left: -1.7rem;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px rgba(247,201,72,0.4);
+}
+
+.tl-item__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.tl-item__org { /* org name (University of Dallas, etc.) */
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+.tl-item__org-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tl-item__logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 6px; /* optional for modern look */
+}
+
+.tl-item__date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-faint);
+}
+
+.tl-item__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.2rem;
+}
+
+.tl-item__sub {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+}
+
+.tl-item__bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.tl-item__bullets li {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.tl-item__bullets li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+
+/* Skills table */
+.skills-tbl {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.skills-tbl__row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.5rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+
+.skills-tbl__cat {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.skills-tbl__val {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .resume-header { flex-direction: column; align-items: flex-start; }
+  .skills-tbl__row { grid-template-columns: 1fr; gap: 0.25rem; }
+  .tl-item__row { flex-direction: column; align-items: flex-start; }
+}

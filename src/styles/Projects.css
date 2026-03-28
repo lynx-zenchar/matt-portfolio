@@ -1,0 +1,200 @@
+.projects-page {
+  padding-top: 4.5rem;
+  min-height: 100vh;
+}
+
+.projects-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+.projects-header {
+  margin-bottom: 3.5rem;
+}
+
+.projects-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.projects-sub {
+  margin-top: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.1rem;
+}
+
+.proj-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+.proj-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.proj-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proj-card__meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.proj-card__github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.proj-card__github:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.proj-card__type {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.proj-card__date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+
+.proj-card__title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.proj-card__desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.72;
+}
+
+.proj-card__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.highlight-pill {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 0.22rem 0.65rem;
+  background: rgba(247, 201, 72, 0.08);
+  border: 1px solid rgba(247, 201, 72, 0.25);
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+.proj-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.proj-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-2);
+  transition: gap var(--transition);
+  margin-top: 0.25rem;
+}
+
+.proj-card__link:hover { gap: 0.6rem; }
+
+@media (max-width: 600px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}
+
+/* Container for bottom links */
+.proj-card__links {
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Live demo button */
+.proj-card__demo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.08);
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.proj-card__demo:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-1px);
+}
+
+/* Icon sizing */
+.proj-card__demo svg {
+    font-size: 0.85rem;
+}
+
+.proj-card__image-wrap {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* Image behavior */
+.proj-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills nicely like a thumbnail */
+    transition: transform 0.3s ease;
+}
+
+/* 🔥 subtle zoom on hover */
+.proj-card:hover .proj-card__image {
+    transform: scale(1.05);
+}

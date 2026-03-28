@@ -1,0 +1,107 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:          #f0f4f8;   /* blue-tinted off-white — easier on eyes than #fff */
+  --bg-2:        #ffffff;   /* cards sit brighter than the page */
+  --bg-3:        #e8eef5;   /* tag backgrounds, slightly deeper than page */
+  --accent:      #1d4ed8;   /* blue-700 — strong enough on white, passes WCAG AA */
+  --accent-2:    #0369a1;   /* sky-700 — complementary deeper blue for secondary labels */
+  --text:        #0f172a;   /* slate-900 — near-black, avoids harsh pure black */
+  --text-muted:  #475569;   /* slate-600 — passes AA on white */
+  --text-faint:  #94a3b8;   /* slate-400 — for timestamps, decorative labels */
+  --border:      #cbd5e1;   /* slate-300 — visible on light bg without heaviness */
+  --font-sans:   'Outfit', sans-serif;
+  --font-mono:   'JetBrains Mono', monospace;
+  --radius:      10px;
+  --transition:  0.2s ease;
+}
+
+
+
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* selection — blue bg + white text, classic and clean */
+::selection { background: var(--accent); color: #fff; }
+
+::-webkit-scrollbar { width: 5px; }
+/* scrollbar */
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* Shared utility classes used across pages */
+.section-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.82rem; /* section labels ("Portfolio", "Credentials", etc.) */
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.skill-tag {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0.35rem 0.8rem;
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  cursor: default;
+}
+
+.skill-tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--radius);
+  font-size:  0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: all var(--transition);
+  cursor: pointer;
+  border: none;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: #fff;   /* was #000 */
+}
+
+.btn--primary:hover {
+  background: #1e40af;
+  box-shadow: 0 8px 28px rgba(29, 78, 216, 0.25);   /* blue shadow instead of gold */
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn--ghost:hover {
+  border-color: var(--text-muted);
+  transform: translateY(-2px);
+}
