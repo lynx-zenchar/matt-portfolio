@@ -64,7 +64,7 @@ const PROJECTS = [
     title: 'Semantic Search & RAG Pipeline',
     category: 'AI/ML',
     type: 'Course Project',
-    date: '2025',
+    date: 'Feb 2026',
     description:
       'Built a retrieval-augmented generation pipeline using FAISS vector indexing, Cohere embeddings, and Phi-3-mini for context-grounded QA over document corpora.',
     tags: ['Python', 'FAISS', 'Cohere', 'Phi-3-mini', 'RAG', 'Embeddings'],
