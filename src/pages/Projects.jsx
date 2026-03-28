@@ -88,7 +88,7 @@ const PROJECTS = [
       'Identified key clinical predictors of cardiovascular risk'
     ],
     github: 'https://github.com/lynx-zenchar/Heart-Disease-Prediction-Analysis-/blob/main/Final_Project.ipynb',
-    image: '/public/project-images/heartpred.png',
+    image: '/project-images/heartpred.png',
     demo: ''
   },
 
@@ -102,7 +102,7 @@ const PROJECTS = [
       'Full-stack real-time workout tracking platform with React, Vite, and Back4App. Features 618 exercise templates, cloud sync, Recharts visualizations, and an LLM fitness coach via Groq API with RAG over user workout history.',
     tags: ['React', 'Vite', 'Chakra UI', 'Back4App', 'Recharts', 'Groq API', 'RAG'],
     highlights: ['618 exercise templates', '100+ users', 'LLM fitness coach'],
-    image: '/public/project-images/builtbuff.png',
+    image: '/project-images/builtbuff.png',
     github: 'https://github.com/lynx-zenchar/BuiltBuff2',
     demo: 'https://builtbuff.netlify.app/',
   },
@@ -120,7 +120,7 @@ const PROJECTS = [
       'Responsive UI with Bootstrap & Crispy Forms, deployed on Vercel'
     ],
     github: 'https://github.com/your-username/thepensive-matthew',
-    image: '/public/project-images/pensive.png',
+    image: '/project-images/pensive.png',
     demo: 'https://thepensivematthew-django.vercel.app/'
   }
 ]
