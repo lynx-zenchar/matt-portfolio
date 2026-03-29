@@ -143,23 +143,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* ABOUT CARDS */}
-            <section className="about-section">
-                <div className="about-section__header">
-                    <span className="section-label">Background</span>
-                    <h2>About Me</h2>
-                </div>
-
-                <div className="about-grid">
-                    {CARDS.map((card) => (
-                        <div key={card.title} className="about-card">
-                            <span className="about-card__icon">{card.icon}</span>
-                            <h3>{card.title}</h3>
-                            <p>{card.body}</p>
-                        </div>
-                    ))}
-                </div>
-            </section>
         </div>
     )
 }

@@ -6,7 +6,7 @@ const EDUCATION = [
     school: 'University of Dallas',
     logo: '/university_of_dallas.png',
     location: 'Irving, TX',
-    degree: 'M.S. Candidate, Data Science and AI',
+    degree: 'M.S. Data Science and AI',
     date: 'Expected May 2027',
     gpa: '4.0',
     courses: ['SQL Programming & ML', 'Programming with AI', 'Data Visualization', 'Quantitative Methods'],
