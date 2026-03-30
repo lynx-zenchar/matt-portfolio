@@ -44,7 +44,7 @@ export default function Home() {
                     <div className="hero__content">
                         <span className="hero__eyebrow">
                             <span className="hero__dot" />
-                            Open to opportunities · Irving, TX (Open to relocation across the US).
+                            Open to opportunities · Dallas, TX (Open to relocation across the US).
                         </span>
 
                         <h1 className="hero__name">
