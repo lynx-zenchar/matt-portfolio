@@ -18,7 +18,7 @@ const EDUCATION = [
     degree: 'B.S. Computer Science; Minor in Philosophy',
     date: 'May 2025',
     gpa: '3.3',
-    courses: ['Design & Analysis of Algorithms', 'Data Structures', 'Database Concepts', 'Probability & Statistics', 'Theory of Computing', 'Modern Web Development'],
+    courses: ['Design & Analysis of Algorithms', 'Data Structures', 'Database Concepts', 'Probability & Statistics', 'Theory of Computing', 'Modern Web Development', 'Computer Architecture', 'Logic Design'],
   },
 ]
 
