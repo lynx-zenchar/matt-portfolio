@@ -54,7 +54,7 @@ export default function Home() {
                         <p className="hero__roles">
                             <span>MS Data Science & AI</span>
                             <span className="sep">·</span>
-                            <span>ML Engineer</span>
+                            <span>BS Computer Science</span>
                             <span className="sep">·</span>
                             <span>Former EMT</span>
                             <span className="sep">·</span>
