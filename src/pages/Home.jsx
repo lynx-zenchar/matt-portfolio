@@ -64,11 +64,11 @@ export default function Home() {
                         </p>
 
                         <p className="hero__bio">
-                            I am a dedicated aspiring data scientist with a strong foundation in machine learning, AI, and full-stack development. My expertise spans Python, SQL, React.js, and various ML frameworks including TensorFlow and PyTorch.
+                            Dedicated aspiring data scientist with a strong foundation in machine learning, AI, and full-stack development. Expertise spans Python, SQL, React.js, and various ML frameworks including TensorFlow and PyTorch.
                         </p>
 
                         <p className="hero__bio">
-                            I'm currently pursuing my M.S. in Data Science and AI at the <b>University of Dallas</b> with a <b>4.0 GPA</b>, I previously earned my B.S. in Computer Science from the <b>University of Notre Dame</b>. I am passionate about applying AI and data science to solve real-world problems.
+                            Currently pursuing an M.S. in Data Science and AI at the <b>University of Dallas</b> with a <b>4.0 GPA</b>, Previously earned B.S. in Computer Science from the <b>University of Notre Dame</b>. Passionate about applying AI and data science to solve real-world problems.
                         </p>
 
                         <div className="hero__cta">
