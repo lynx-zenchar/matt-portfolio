@@ -68,7 +68,7 @@ export default function Home() {
                         </p>
 
                         <p className="hero__bio">
-                            Currently pursuing an M.S. in Data Science and AI at the <b>University of Dallas</b> with a <b>4.0 GPA</b>, Previously earned B.S. in Computer Science from the <b>University of Notre Dame</b>. Passionate about applying AI and data science to solve real-world problems.
+                            Currently pursuing an M.S. in Data Science and AI at the <b>University of Dallas</b> with a <b>4.0 GPA</b>, Previously earned B.S. in Computer Science from the <b>University of Notre Dame</b>. Passionate about applying AI and data science to solve real-world problems. 
                         </p>
 
                         <div className="hero__cta">
