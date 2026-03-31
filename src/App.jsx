@@ -6,7 +6,7 @@ import Home from './pages/Home'
 import Resume from './pages/Resume'
 import Projects from './pages/Projects'
 import Certifications from './pages/Certifications'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App() {
   return (
