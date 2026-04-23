@@ -64,7 +64,7 @@ export default function Home() {
                         </p>
 
                         <p className="hero__bio">
-                            Dedicated aspiring data scientist with a strong foundation in machine learning, AI, and full-stack development. Expertise spans Python, SQL, React.js, and various ML frameworks including TensorFlow and PyTorch.
+                            Dedicated aspiring data scientist with a solid foundation in machine learning, AI, and full-stack development. Proficiency spans Python, SQL, React.js, and various ML frameworks including TensorFlow and PyTorch.
                         </p>
 
                         <p className="hero__bio">

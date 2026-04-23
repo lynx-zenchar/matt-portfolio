@@ -119,7 +119,7 @@ const PROJECTS = [
       'Integrated WYSIWYG editor with image uploads and media management',
       'Responsive UI with Bootstrap & Crispy Forms, deployed on Vercel'
     ],
-    github: 'https://github.com/your-username/thepensive-matthew',
+    github: 'https://github.com/lynx-zenchar/thepensive-matthew',
     image: '/project-images/pensive.png',
     demo: 'https://thepensivematthew-django.vercel.app/'
   },
